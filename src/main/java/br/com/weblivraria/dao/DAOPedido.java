@@ -18,6 +18,7 @@ public class DAOPedido extends Conexao implements CRUDLivraria<Pedido>{
 				pst.setDouble(2, dados.getTotalpedido());
 				if(pst.executeUpdate()>0) {
 					msg = "pedido efetuado";
+					
 				}
 				else {
 					msg = "Não foi possivel realizar o pedido";
