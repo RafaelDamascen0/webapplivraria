@@ -67,24 +67,24 @@ public class TestDAOUsuario {
 //		
 //	}
 	
-//	@Test
-//	public void testLogin() {
-//		Usuario us = new Usuario();
-//		us.setNomeusuario("Dazai");
-//		us.setSenha("123");
-//		
-//		DAOUsuario daous = new DAOUsuario();
-//		assertTrue(daous.login(us));
-//	}
-	
 	@Test
-	public void testAlterarSenha() {
+	public void testLogin() {
 		Usuario us = new Usuario();
-		us.setSenha("abc123");
-		us.setIdusuario(1);
+		us.setNomeusuario("Dazai");
+		us.setSenha("123");
+		
 		DAOUsuario daous = new DAOUsuario();
-		assertEquals("Atualização realizada", daous.alterarSenha(us));
+		assertTrue(daous.login(us));
 	}
+	
+//	@Test
+//	public void testAlterarSenha() {
+//		Usuario us = new Usuario();
+//		us.setSenha("abc123");
+//		us.setIdusuario(1);
+//		DAOUsuario daous = new DAOUsuario();
+//		assertEquals("Atualização realizada", daous.alterarSenha(us));
+//	}
 	
 
 }

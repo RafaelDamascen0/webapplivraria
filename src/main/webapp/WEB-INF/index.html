@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários Cadastrados</title>
+
+    <style>
+        h1{
+            font-family: arial;
+            font-size: 30pt;
+            text-align: center;
+            color:black
+        }
+        #estrutura{
+            width: 60%;
+            margin-left: auto;
+            flex-wrap: wrap;
+            margin-right: auto;
+        }
+        .dp img{
+            width: 24px;
+            height: 24px;
+            margin:5px;
+        }
+        .dc img{
+            width: 16px;
+            height: 16px;
+            margin: 5px;
+        }
+        .us{
+            background-color: #e1f5fe;
+            padding:10px;
+            width: 250px;
+            border-radius: 5px;
+            transition: ease 0.5s;
+        }
+        .us:hover{
+            background-color: #b3e5fc;
+        }
+
+        h2{
+            font-family: arial;
+            font-size:12pt;
+        }
+        .dp{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .dc div{
+            font-family: arial;
+            font-size: 10pt;
+            display: flex;
+            align-items: center;
+            width: 200px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Usuários Cadastrados</h1>
+    <div id="estrutura">
+
+        <div class="us">
+            <div class="dp">
+                <img src="user.png" alt="">
+                <h2>Samantha Pires</h2>
+                <a href="atualizar.html">
+                    <img src="edit.png" alt="">
+                </a>
+            </div>
+
+            <div class="dc">
+                <div><img src="phone.png" alt=""> (11) 99865-5568</div>
+                <div><img src="email.png" alt="">samantha@uol.com.br</div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
